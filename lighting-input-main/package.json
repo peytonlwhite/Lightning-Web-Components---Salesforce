@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/peytonlwhite.lighting-input",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve TXbxOoek8Yi88MlP5pDC --open"
+  }
+}
