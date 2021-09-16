@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/peytonlwhite.lightningpills",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 9P9JWJ3CeRDOrF6P7hmN --open"
+  }
+}

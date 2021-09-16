@@ -1,0 +1,33 @@
+<template>
+	<div class="slds-card">
+		<div class="slds-m-vertical_medium">
+			<p>Info: <span class="slds-text-heading_small">{infoText}</span></p>
+		</div>
+
+		<lightning-pill label="Google" href="https://www.google.com"></lightning-pill>
+
+		<lightning-pill label="Yahoo" href="https://www.yahoo.com"></lightning-pill>
+		<br/>
+		<br/>
+
+		<lightning-pill label="Peyton" href="https://github.com/peytonlwhite?tab=repositories">
+			<lightning-avatar src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg"
+				fallback-icon-name="standard:user" variant="circle" alternative-text="User avatar">
+			</lightning-avatar>
+		</lightning-pill>
+		<br/>
+		<br/>
+
+		<template if:true={showPill}>
+			<lightning-pill label="Pop Up" onremove={handleRemoveOnly} onclick={handleClick}>
+			</lightning-pill>
+		</template>
+
+		<template if:false={showPill}>
+			<label onclick={handleRemoveOnly}>
+				Show Pill
+			</label>
+		</template>
+
+	</div>
+</template>
