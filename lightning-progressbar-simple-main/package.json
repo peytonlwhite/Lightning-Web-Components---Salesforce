@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/peytonlwhite.lwc-ku3harh6",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve stInr00eIGsngIKCJOPf --open"
+  }
+}

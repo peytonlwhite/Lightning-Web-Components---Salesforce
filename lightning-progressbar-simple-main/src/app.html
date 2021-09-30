@@ -1,0 +1,38 @@
+<template>
+	<div class="slds-card">
+		<h1 class="slds-text-heading_large slds-border_bottom">Progress Bar</h1>
+		<!--Progress Bar -->
+		</br>
+		<lightning-progress-bar variant="circular" value={progress}></lightning-progress-bar>
+		<!--Questions-->
+		<div class="slds-p-around_medium">
+			<lightning-input onchange={bindText} data-var="firstName" type="text" label="First Name" value={firstName}>
+			</lightning-input>
+			<lightning-input onchange={bindText} data-var="lastName" type="text" label="Last Name" value={lastName}>
+			</lightning-input>
+			<lightning-input onchange={bindText} data-var="favColor" type="color" label="Favorite color" value={favColor}>
+			</lightning-input>
+			</br>
+			<lightning-button label="Submit" onclick={formSubmit}> </lightning-button>
+			<lightning-button class="slds-p-around_medium" label="Reset" onclick={reset}> </lightning-button>
+
+			<template if:false={formComplete}>
+				<template if:true={submitClicked}>
+					<p style="color:red"> Please fill out the whole form </p>
+				</template>
+			</template>
+		</div>
+
+		<template if:true={formComplete}>
+			<div class="slds-p-around_medium slds-card">
+				<h1 class="slds-align_absolute-center slds-text-heading_large slds-border_bottom">You Are</h1>
+				Name: {firstName} {lastName}
+				</br>
+				<lightning-input disabled="true" value={favColor} type="color" label="Favorite color"></lightning-input>
+
+			</div>
+		</template>
+
+
+	</div>
+</template>
