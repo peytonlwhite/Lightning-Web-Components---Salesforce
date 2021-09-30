@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/peytonlwhite.lightning-progress-dynamic-form",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve l7iRRH6IQMSX10Ws2S6D --open"
+  }
+}
